@@ -48,3 +48,8 @@ myspider/
 ```
 
 接下来只要修改baidu.py文件来进行相关解析操作就行了
+
+
+# baidu.py中的注意事项
+必须要有parse()方法，不然会报错，如果提示说xxx.parse()签名不匹配，只需要在括号里面加上", **kwargs"就可以了。
+parse()方法返回必须使用 yield 返回，不能用 return
